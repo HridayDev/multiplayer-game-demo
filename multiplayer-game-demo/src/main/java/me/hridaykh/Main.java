@@ -1,7 +1,6 @@
 package me.hridaykh;
 
 import java.util.Scanner;
-import me.hridaykh.game.game;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -13,17 +12,17 @@ public class Main {
     switch (Class) {
         case "c":
             System.out.println("Client:\n");
-            new me.hridaykh.multiplayer_system.client.client().run();
+            new me.hridaykh.multiplayer_system.client().run();
             System.out.println("\nClient Stopped.");
             break;
         case "s":
             System.out.println("Server:\n");
-            new me.hridaykh.multiplayer_system.server.server().run();
+            new me.hridaykh.multiplayer_system.server().run();
             System.out.println("\nServer Stopped.");
             break;
             case "g":
                 System.out.println("Game:\n");
-                new game.game().run();
+                new me.hridaykh.game.gameMain().run();
                 System.out.println("\ngame Stopped.");
                 break;
         default:
